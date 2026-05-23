@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rest Parameter</h1>
+    <script>
+        const num1 =   [1,2,3,4,5]
+
+        
+// // debugger
+//         function add(a,b,...nums){
+//             console.log(a,b)
+//             console.log(nums)
+//             let sum =0
+//             for(let i=0;i<nums.length;++i){
+//                   sum+=nums[i]
+//             }
+//             return sum
+//         }
+//  const result  = add(...num1,20,10)
+//         console.log(result)
+
+
+
+
+        function add(){
+          return [...arguments].reduce((accumulator,currentValue)=> accumulator+currentValue)
+        
+        }
+        
+
+        // function add(){
+        //   return Array.from(arguments).reduce((accumulator,currentValue)=> accumulator+currentValue)  
+        // }
+
+       
+
+        // function add(...nums){
+        //   return nums.reduce((accumulator,currentValue)=> accumulator+currentValue)  
+        // }
+
+
+
+        const result  = add(...num1,20,10)
+        console.log("Addition of elements in Array :" ,result)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+
+</head>
+
+<body style="font-family: cursive;">
+    <h1>Switch Statement</h1>
+    <script>
+
+        //  const dayNumber = 6
+
+        // if (dayNumber === 0) {
+        //   console.log('It is Sunday Today')
+        // } else if (dayNumber === 1) {
+        //   console.log('It is Monday Today')
+        // } else if (dayNumber === 2) {
+        //   console.log('It is Tuesday Today')
+        // } else if (dayNumber === 3) {
+        //   console.log('It is Wednesday Today')
+        // } else if (dayNumber === 4) {
+        //   console.log('It is Thursday Today')
+        // } else if (dayNumber === 5) {
+        //   console.log('It is Friday Today')
+        // } else if (dayNumber === 6) {
+        //   console.log('It is Saturday Today')
+        // } else {
+        //   console.log('Please Enter a Valid Day Number')
+        // }
+        // console.log('program Ended !!')
+
+
+
+        // const day = 5
+        // switch(day){
+        //     case 0: 
+        //     console.log('It is Sunday Today')
+        //     break
+        //     case 1: 
+        //     console.log('It is Monday Today')
+        //     break
+        //     case 2: 
+        //     console.log('It is Tuesday Today')
+        //     break
+        //     case 3: 
+        //     console.log('It is Wednesday Today')
+        //     break
+        //     case 4: 
+        //     console.log('It is Thursday Today')
+        //     break
+        //     case 5: 
+        //     console.log('It is Friday Today')
+        //     break
+        //     case 6: 
+        //     console.log('It is saturday Today')
+        //     break
+        //     default:
+        //         console.log('please Enter a valid Day Number')
+        // }
+
+        
+        const userAge = 22
+        const username = 'Amit kumar'
+        switch (true) {
+            case (userAge > 0 && userAge <= 4):
+                console.log(`${username} is a kid.`)
+                break
+            case (userAge >= 5 && userAge <= 17):
+                console.log(`${username} is a school student.`)
+                break
+            case (userAge >= 18 && userAge <= 24):
+                console.log(`${username} is a college student.`)
+                break
+            case (userAge >= 25 && userAge <= 45):
+                console.log(`${username} is a working professional`)
+                break
+            case (userAge > 45 && userAge < 121):
+                console.log(`${username} is a retired`)
+                break
+            case (userAge >= 121):
+                console.log(`${username} is a Immortal`)
+                break
+            default:
+                console.log(`please enter a valid Age `)
+        }
+
+
+
+const grade = 'B'
+debugger
+switch(grade.toLocaleLowerCase()){
+    case 'A':
+        console.log('Your Score is between 85% to 100%')
+        break
+    case 'b':
+        console.log('Your Score is between 75% to 85% ')
+        break
+    case 'C':
+        console.log('Your Score is between 60% to 75% ')
+        break
+    case 'D':
+        console.log('Your Score is between 50% to 60% ')
+        break
+    case 'E':
+        console.log('Your Score is between 30% to 500% ')
+        break
+        default:console.log('Sorry, you Failed!')
+}
+console.log('Program Ended !')
+
+
+
+
+
+
+        </script>
+</body>
+
+</html>

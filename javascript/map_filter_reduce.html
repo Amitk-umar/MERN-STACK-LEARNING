@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body style="font-family: cursive">
+    <h1>Map ,filter and reduce (methods)</h1>
+    <script>
+    //   const colors = ["rEd", "green", "yellow", "pink", "blackish"];
+
+    //   // console.log(colors.map((color,index,array) => {
+    //   //     // console.log(index+1,color)
+    //   //     // console.log(array)
+    //   //     return color.toUpperCase()
+    //   // }))
+
+    //   // const capitalColor = colors.map((color,index) => {
+    //   //     console.log(index+1,color)
+    //   //     return color.toUpperCase()
+    //   // })
+
+    //   //   const filteredColors = colors.filter((color, index, array) => {
+    //   //     console.log(color.includes("e"));
+    //   //     // console.log(array)
+    //   //     // return color.length>4
+    //   //     return color.toLowerCase().includes("e");
+    //   //   });
+    //   //   console.log("Flitered Colors Array :", filteredColors);
+
+    //   const students = [
+    //     {
+    //       name: "Amit",
+    //       age: 17,
+    //     },
+    //     {
+    //       name: "Akansh",
+    //       age: 21,
+    //     },
+    //     {
+    //       name: "Rahul",
+    //       age: 18,
+    //     },
+    //     {
+    //       name: "Ravi",
+    //       age: 25,
+    //     },
+    //     {
+    //       name: "Raghav",
+    //       age: 26,
+    //     },
+    //   ];
+    //   //   const adultStudents = students.filter((student, index) => {
+      //     //   console.log(index,student)
+      //     // console.log(student.age>18)
+      //     return student.age >= 18;
+      //   }).map((studentName) => {
+      //     // console.log(studentName.name)
+      //     return studentName.name;
+      //   }).filter((aLetterNames)=>{
+      //     return aLetterNames.toLowerCase().startsWith('r')
+      //   });
+// debugger
+      const nums = [1, 2, 3];
+
+      const numbersSum = nums.reduce((accumulator, currentValue, index) => {
+        // console.log(index,currentValue)
+        console.log(accumulator,currentValue)
+        return  accumulator + currentValue;
+      },0);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Destructuring</h1>
+    <script>
+        const colors = ['red', 'green', 'blue','yellow','orange'];
+
+        // const color1 = colors[0];
+        // const color2 = colors[1];   
+        // const color3 = colors[2];
+
+            // const [color1, color2, color3,color4,color5] = colors;
+            // const [,, color3] = colors; 
+            const{2:color3} = colors
+
+
+        const  user ={
+            name:'Amit kumar',
+            age: 30,
+            address: {
+                city: 'ludhiana',
+                state:'punjab',
+                country: 'India'
+            }
+        }
+        
+
+        // const name  = user.name
+        // const age = user.age
+
+        // const{name,age}  = user
+        // const{name,age}  = user
+        // const{name:username,age:userAge}  = user
+
+        // const {address:{city,state,country}}=user            //Multilevel destructing
+        
+        // const {address}=user
+        // const{city,state,country}=address
+
+// function intro({age,name}){
+//     console.log(name,age)
+// }
+// intro(user)
+
+function printcolor([a,b,,d]){   //{4:color5}
+    console.log(a,b,d)
+}
+printcolor(colors)
+
+    </script>
+</body>
+</html>

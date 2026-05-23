@@ -1,0 +1,15 @@
+.container{
+    color: green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.card{
+    height: 80px;
+    width: 80px;
+    background-color: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}

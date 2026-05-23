@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: cursive;">
+    <h1>Truthy and falsy values</h1>
+    <h2>falsy values</h2>
+    <ul>
+        <li>0</li>
+        <li>-0</li>
+        <li>Null</li>
+        <li>undefined</li>
+        <li>''</li>
+        <li>NaN</li>
+    </ul>
+    <script>
+        console.log(Boolean(''))
+        
+        console.log(!(!0.454484)) //Another way for checking truthy or falsy
+
+        console.log(Boolean(0))
+        console.log(Boolean(` `))
+        console.log(Boolean(null))
+        console.log(Boolean(undefined))
+    </script>
+</body>
+</html>

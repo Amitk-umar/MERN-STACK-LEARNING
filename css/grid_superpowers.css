@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 60vh;
+    background-color: lightblue;
+    display: grid;
+    /* grid-template-rows: repeat(6,100px);  */
+    grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+    /* grid-template: repeat(6,100px) /repeat(4,100px); */
+    /* grid-auto-flow: column dense; */
+    /* grid-auto-flow: column; */
+    /* grid-auto-columns: 100px;  */
+    /* grid-auto-rows: 100px; */
+    /* justify-content: center; */
+    /* align-items: center;
+    justify-items: center; */
+    /* align-items: end;
+    justify-items: end; */
+}
+
+.box {
+    color: white;
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.box1 {
+    background-color: darkgreen;
+    /* grid-column-start: 4;   */
+    /* height: 100px; */
+}
+
+.box2 {
+    background-color: darkblue;
+
+}
+
+.box3 {
+    background-color: darkgoldenrod;
+    /* grid-column-start: 3;
+    grid-column-end: 5; */
+    /* grid-column: 3  / 5; */
+}
+
+.box4 {
+    background-color: darkorange;
+}
+
+.box5 {
+    background-color: darkmagenta;
+}
+
+.box6 {
+    background-color: darkkhaki;
+    /* align-self: stretch;
+    justify-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* margin-inline: auto;
+    margin-block: auto; */
+}
+
+.box7 {
+    background-color: darkolivegreen;
+}
+
+.box8 {
+    background-color: darkred;
+}
+
+.box9 {
+    background-color: darksalmon;
+}
+
+.box10 {
+    background-color: darkgrey;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+     background-color: lightblue;
+     min-height: 60vh;
+     display: grid;
+     /* grid-template-columns: 100px 100px 100px 100px;
+     grid-template-rows: 100px 100px 100px; */
+
+
+     grid-template-columns: repeat(4,100px);
+     grid-template-rows: repeat(4,100px);
+
+     
+     /* grid-template-columns: repeat(4,auto);
+     grid-template-rows: repeat(4,auto); */
+}
+.box{
+    /* height: 120px;
+    width: 120px; */
+    font-size: 4rem;
+    color: white;
+}
+.box-1{
+    background-color: green;
+    position: relative;
+    /* grid-column-start: 1;
+    grid-row-start: 1; */
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+
+    grid-row-end: 4;
+    grid-column-end: 4;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.box-2{
+    background-color: violet;
+
+}
+.box-3{
+    background-color: palevioletred;
+
+}
+.box-4{
+    background-color: purple;
+
+}
+.box-5{
+    background-color: peru;
+
+}
+.box-6{
+    background-color: rgb(0, 255, 225);
+
+}
+.box-7{
+    background-color: brown;
+
+}
+.box-8{
+    background-color: cornflowerblue;
+
+}
+.box-9{
+    background-color: palevioletred;
+
+}
+.box-10{
+    background-color: darkkhaki;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="box box-1">1</div>
+<!-- <div class="box box-2">2</div>
+<div class="box box-3">3</div>
+<div class="box box-4">4</div>
+<div class="box box-5">5</div>
+<div class="box box-6">6</div>
+<div class="box box-7">7</div>
+<div class="box box-8">8</div>
+<div class="box box-9">9</div>
+<div class="box box-10">10</div> -->
+
+    </div>
+</body>
+</html>

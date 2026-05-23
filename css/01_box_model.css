@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    
+}
+p{
+    background-color: lightgreen;
+    width: 300px;
+    height: 200px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 8px solid green;
+    margin:25px;
+}
+.html{
+    background-color: darkcyan;
+    width: 300px;
+}
+
+div{
+    background-color: yellowgreen;
+    padding: 40px;
+}
+a{
+    display: block;
+    background-color: hotpink;
+    /* padding: 30px; */
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep copy Vs Shallow Copy</title>
+</head>
+
+<body>
+    <Script>
+
+        //📖 without shallow copy the address in both Array and object is same but after shallow copy the address will be different
+
+        //         const userName1 = 'Amit'
+        //         let userName2 = userName1
+        //         userName2 = userName2 + `Maurya`
+
+
+        // const fruits = ['Mango', 'grapes', 'Guava', 'Litchi']
+        // const myFruits = fruits
+        // myFruits.push('Dates')
+        // myFruits.push('WaterMelon')
+        // console.log(myFruits)
+
+
+        const user1 = {
+            firstName: 'Amit',
+            lastName: 'kumar',
+            pata : {
+                city:'Ludhiana',
+                pinCode:141007
+            },
+            subject : ['Math','physics','chemistry','bio']
+            }
+        // const user2 = user1
+        // user2.lastName = 'Maurya'
+        // console.log(user1)
+
+
+        //for shallow copy ©️ --> but the nested object will copy as same without change if we try to change in shallow copy by assign or spread operator.
+                    
+        // const user1 = {
+        //     firstName: 'Amit',
+        //     lastName: 'kumar'
+        // }
+
+        // const user2 = {}
+        // Object.assign(user2,user1)   //by Assign operator
+        const user2 = {...user1}   //  BY spread operator
+
+        // user2.firstName='Ankit',user2.lastName='Jangir'
+
+
+        // Doing Same with Array
+        // const fruits = ['Mango', 'grapes', 'Guava', 'Litchi']
+        // const myFruits = []
+        // Object.assign(myFruits,fruits)
+        // const fruit2 = [...fruits]
+        // const fruit2 = [].concat(fruits)
+        // const fruit2 = fruits.slice()
+       
+        
+        // fruit2.push("Apple")
+
+
+
+
+
+
+    </Script>
+</body>
+
+</html>

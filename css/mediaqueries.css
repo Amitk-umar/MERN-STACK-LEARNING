@@ -1,0 +1,21 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 24px solid rgb(2, 27, 150);
+    background: black;
+    /* print-color-adjust: exact; */
+    /* -webkit-print-color-adjust:exact; */
+}
+
+/* @media (orientation: portrait) and (width>400px) {
+    .box {
+        border: 24px solid red;
+        background-color: darkgoldenrod;
+        }
+        } */
+@media (max-width:700px) {
+    .box {
+        border: 24px solid red;
+        background-color: darkgoldenrod;
+    }
+}

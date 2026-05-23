@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Some and every</h1>
+
+    <script>
+      const evenNumbers = [0, 10 , 2, 4, 6, 8];
+    //  const result =  evenNumbers.some((num,i) => {
+    //     if(num % 2  === 1 ){
+    //         console.log(i)
+    //     }
+    //     // console.log(num);
+    //     return num % 2  === 1  //check truty or falsy value in array if atleast one truthy value encountered then retun true esle gives false 
+    //   });
+     const result =  evenNumbers.every((num,i) => {
+        return num % 2  === 0  //check truty or falsy value in array if one falsy value encountered then return false and sare true hone chahiye terminate
+      });
+    </script>
+  </body>
+</html>

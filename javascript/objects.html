@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="font-family: cursive;">Objects in JavaScript </h1>
+    <script>
+        // const user = {
+        //     firstName: 'Amit',
+        //     lastName: 'kumar',
+        //     number: '9877729580',
+        //     age: 21, 
+        //     city: 'ludhiana',
+        //     education: 'Graduate'
+        // }
+        // const user2 = {
+        //     firstName: 'Amit',
+        //     lastName: 'kumar',
+        //     number: '9877729580',
+        //     age: 21,
+        //     city: 'ludhiana',
+        //     education: 'Graduate'
+        // }
+        // console.log(user === user2)
+
+        // const emptystr = ''
+        // const emptystr2 = ''
+
+        // const user3 = {
+        //     firstName: 'Amitabh',
+        //     'last-Name': 'kumar'
+        // }
+        // console.log(user3)
+        // console.log(user3.firstName)
+        // console.log(user3['last-Name'])
+        // console.log(user2['first' + 'Name'])
+
+
+        let userName = 'Maxwin'
+        let user3 = {
+            firstName: 'Amitabh',
+            lastName: 'kumar',
+            address: {
+                city: 'bangalore',
+                pincode: 878788,
+                state: 'punjab',
+                "other-Details": {
+                    population: '40 crore',
+                    'country-Name': 'India'
+                }
+            }
+
+        }
+
+
+        //to prevent from changes in object we use seal function but user can change existing key value
+        Object.seal(user3)
+
+        // user don't make any change to object 
+        Object.freeze(user3)
+
+        // to add key value pair  in object
+        user3.age = 22
+        console.log(user3)
+
+        // to remove key value pair in object
+        delete user3.address
+        console.log(user3)
+
+        // to check key is in object or not
+        console.log('firstName' in user3)
+    </script>
+</body>
+
+</html>

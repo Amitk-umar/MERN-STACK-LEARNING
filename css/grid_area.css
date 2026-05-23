@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: lightblue;
+    min-height: 60vh;
+    display: grid;
+    grid-template-areas:
+        'Bangalore Bangalore Delhi Pune'
+        'Bangalore Bangalore Delhi Pune'
+        'Mumbai Mumbai Mumbai Pune';
+    /* grid-auto-columns: 150px;
+    grid-auto-rows: 120px; */
+}
+
+.box {
+    color: white;
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.box1 {
+    background-color: darkgreen;
+    /* grid-column: Bangalore;
+    grid-row: Bangalore; */
+    grid-area: Bangalore;
+}
+
+.box2 {
+    background-color: darkblue;
+    grid-area: Delhi;
+}
+
+.box3 {
+    background-color: darkgoldenrod;
+
+}
+
+.box4 {
+    background-color: darkorange;
+    grid-area: Pune;
+}
+
+.box5 {
+    background-color: darkmagenta;
+    grid-area: Mumbai;
+}
+
+.box6 {
+    background-color: darkkhaki;
+
+}
+
+.box7 {
+    background-color: darkolivegreen;
+}
+
+.box8 {
+    background-color: darkred;
+}
+
+.box9 {
+    background-color: darksalmon;
+}
+
+.box10 {
+    background-color: darkgrey;
+}
+
+@media (max-width:550px) {
+    .container {
+        grid-template-areas:
+            ' Bangalore Bangalore Delhi'
+            ' Mumbai Mumbai Delhi'
+            ' Pune Pune Delhi'
+        ;
+    }
+}

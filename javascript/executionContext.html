@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execution context</title>
+</head>
+
+<body style="font-family: cursive;">
+    <h1>Execution context</h1>
+    <script>
+
+        // debugger
+        //         sayHello()
+        // //📖 function call first that why local execution context will run first and then global execution context will run
+        //         const userName = 'Amit kumar'
+        //         console.log(userName)
+
+        //         function sayHello(){
+        //             const a = 20 
+        //             const b = 30
+        //             addTwoNumber(8,5)
+        //         }
+        //         function addTwoNumber(x,y){
+        //             return x+y
+        //         }
+
+        function introduceMe(){
+            console.log('Hii, My name is Amit kumar')  // Uncaught RangeError: Maximum call stack size exceeded
+            introduceMe()
+        }
+        introduceMe()
+    </script>
+</body>
+
+</html>

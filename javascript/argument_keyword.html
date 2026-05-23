@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Arguments Keyword</h1>
+    <script>
+        // const add2 = ()=> {
+        //     // console.log(arguments[0])
+        //     // return a+b
+        //     let sum = 0
+        //     for (let i = 0; i < arguments.length; i++) {
+        //         // console.log(arguments[i])
+        //         sum += arguments[i]
+        //     } 
+        //     return `sum : ${sum}`
+
+        // }
+
+
+
+
+        // const add =  function () {
+        //     // console.log(arguments[0])
+        //     // return a+b
+        //     let sum = 0
+        //     for (let i = 0; i < arguments.length; i++) {
+        //         // console.log(arguments[i])
+        //         sum += arguments[i]
+        //     } 
+        //     return `sum : ${sum}`
+
+        // }
+
+
+        //Sum using spread operator and reduce array method
+
+        const add = function () {
+            const args = [...arguments] //convert the arguments into real array
+            // console.log(args)
+            let sum = args.reduce((accumulator, currentValue) => {return accumulator+currentValue},0)
+            return `Sum is : ${sum}`
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
